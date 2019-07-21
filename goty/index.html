@@ -16,48 +16,167 @@ var encrypted_channel_id='7Ay3LLJtdBmSAqqYxkzmyMg74oOk6rpJ7P0vFA4zbYo';
       year = parseInt(year, 10);
 
       const games = {
-        1980: "Pacman",
-        1981: "Donkey Kong",
-        1982: "Pitfall",
-        1983: "Mario Bros",
-        1984: "Elite",
-        1985: "Super Mario Bros",
-        1986: "The Legend of Zelda",
-        1987: "Mike Tyson's Punch-Out!! ",
-        1988: "Super Mario Bros 3",
-        1989: "Tetris",
-        1990: "Super Mario World",
-        1991: "Street Fighter II",
-        1992: "Mortal Kombat",
-        1993: "Doom",
-        1994: "Donkey Kong Country",
-        1995: "Super Mario World II: Yoshi Island (no sabia que existia D=)",
-        1996: "Super Mario 64",
-        1997: "Final Fantasy VII",
-        1998: "The Legend of Zelda: Ocarina of Time",
-        1999: "Unreal Tournament",
-        2000: "The Sims",
-        2001: "Halo",
-        2002: "Metroid Prime",
-        2003: "Star Wars: Knights of the old republic",
-        2004: "Half-life 2",
-        2005: "Resident Evil 2",
-        2006: "The Legend of Zelda: Twilight Princess",
-        2007: "Super Mario galaxy",
-        2008: "Fallout 3",
-        2009: "Uncharted 2: Among Thieves",
-        2010: "Mass Effect 2",
-        2011: "The Elder Scroll V: Skyrim",
-        2012: "Journey",
-        2013: "The Last of Us",
-        2014: "Dragon Age: Inquisition",
-        2015: "The Witcher 3: Wild Hunt",
-        2016: "Uncharted 4: A Thief's end",
-        2017: "The Legend of Zelda: Breath of the Wild",
-        2018: "Red Dead Redemption 2",
+        1980: {
+          name: 'Pacman',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1981: {
+          name: 'Donkey Kong',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1982: {
+          name: 'Pitfall',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1983: {
+          name: 'Mario Bros',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1984: {
+          name: 'Elite',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1985: {
+          name: 'Super Mario Bros',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1986: {
+          name: 'The Legend of Zelda',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1987: {
+          name: 'Mike Tyson`s Punch-Out!! ',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1988: {
+          name: 'Super Mario Bros 3',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1989: {
+          name: 'Tetris',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1990: {
+          name: 'Super Mario World',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1991: {
+          name: 'Street Fighter II',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1992: {
+          name: 'Mortal Kombat',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1993: {
+          name: 'Doom',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1994: {
+          name: 'Donkey Kong Country',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1995: {
+          name: 'Super Mario World II: Yoshi Island (no sabia que existia D=)',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1996: {
+          name: 'Super Mario 64',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1997: {
+          name: 'Final Fantasy VII',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1998: {
+          name: 'The Legend of Zelda: Ocarina of Time',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        1999: {
+          name: 'Unreal Tournament',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2000: {
+          name: 'The Sims',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2001: {
+          name: 'Halo',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2002: {
+          name: 'Metroid Prime',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2003: {
+          name: 'Star Wars: Knights of the old republic',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2004: {
+          name: 'Half-life 2',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2005: {
+          name: 'Resident Evil 2',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2006: {
+          name: 'The Legend of Zelda: Twilight Princess',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2007: {
+          name: 'Super Mario galaxy',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2008: {
+          name: 'Fallout 3',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2009: {
+          name: 'Uncharted 2: Among Thieves',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2010: {
+          name: 'Mass Effect 2',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2011: {
+          name: 'The Elder Scroll V: Skyrim',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2012: {
+          name: 'Journey',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2013: {
+          name: 'The Last of Us',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2014: {
+          name: 'Dragon Age: Inquisition',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2015: {
+          name: 'The Witcher 3: Wild Hunt',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2016: {
+          name: 'Uncharted 4: A Thief`s end',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2017: {
+          name: 'The Legend of Zelda: Breath of the Wild',
+          img: 'https://via.placeholder.com/350x150',
+        },
+        2018: {
+          name: 'Red Dead Redemption 2',
+          img: 'https://via.placeholder.com/350x150',
+        },
       };
 
-      document.write(`El videojuego más relevante de ${year} es <strong>${games[year] || defaultMessage}</strong>.`);
+      const game = games[year] || {};
+
+      document.write(`El videojuego más relevante de ${year || 0} es <strong>${game.name || defaultMessage}</strong>. <img src="${game.img || ''}" />`);
     </script>
     <br>
     <p>Lista tomada de <a href="https://bit.ly/2XSMWn4"> Vandal.</a></p>
