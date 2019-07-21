@@ -10,134 +10,54 @@ var encrypted_channel_id='7Ay3LLJtdBmSAqqYxkzmyMg74oOk6rpJ7P0vFA4zbYo';
     <h1>Conoce el videojuego más importante del año de tu nacimiento</h1>
     <br>
     <script>
+      const defaultMessage = "Escondidas americanas... pero por ser tan feit@, no te dejaban jugar xD";
       let year = prompt(`¿En que año naciste? \nEscribe los cuatro digitos, ej: 1900.`);
-      let years = parseInt(year, 10); // is important to add the radix parameter, is the mathematical numeric system to use
-      let juego;
 
-      switch (years) {
-        case(1980):
-          juego = "Pacman";
-          break;
-        case(1981):
-          juego = "Donkey Kong";
-          break;
-        case(1982):
-          juego = "Pitfall";
-          break;
-        case(1983):
-          juego = "Mario Bros";
-          break;
-        case(1984):
-          juego = "Elite";
-          break;
-        case(1985):
-          juego = "Super Mario Bros";
-          break;
-        case(1986):
-          juego = "The Legend of Zelda";
-          break;
-        case(1987):
-          juego = "Mike Tyson's Punch-Out!! ";
-          break;
-        case(1988):
-          juego = "Super Mario Bros 3";
-          break;
-        case(1989):
-          juego = "Tetris";
-          break;
-        case(1990):
-          juego = "Super Mario World";
-          break;
-        case(1991):
-          juego = "Street Fighter II";
-          break;
-        case(1992):
-          juego = "Mortal Kombat";
-          break;
-        case(1993):
-          juego = "Doom";
-          break;
-        case(1994):
-          juego = "Donkey Kong Country";
-          break;
-        case(1995):
-          juego = "Super Mario World II: Yoshi Island (no sabia que existia D=)";
-          break;
-        case(1996):
-          juego = "Super Mario 64";
-          break;
-        case(1997):
-          juego = "Final Fantasy VII";
-          break;
-        case(1998):
-          juego = "The Legend of Zelda: Ocarina of Time";
-          break;
-        case(1999):
-          juego = "Unreal Tournament";
-          break;
-        case(2000):
-          juego = "The Sims";
-          break;
-        case(2001):
-          juego = "Halo";
-          break;
-        case(2002):
-          juego = "Metroid Prime";
-          break;
-        case(2003):
-          juego = "Star Wars: Knights of the old republic";
-          break;
-        case(2004):
-          juego = "Half-life 2";
-          break;
-        case(2005):
-          juego = "Resident Evil 2";
-          break;
-        case(2006):
-          juego = "The Legend of Zelda: Twilight Princess";
-          break;
-        case(2007):
-          juego = "Super Mario galaxy";
-          break;
-        case(2008):
-          juego = "Fallout 3";
-          break;
-        case(2009):
-          juego = "Uncharted 2: Among Thieves";
-          break;
-        case(2010):
-          juego = "Mass Effect 2";
-          break;
-        case(2011):
-          juego = "The Elder Scroll V: Skyrim";
-          break;
-        case(2012):
-          juego = "Journey";
-          break;
-        case(2013):
-          juego = "The Last of Us";
-          break;
-        case(2014):
-          juego = "Dragon Age: Inquisition";
-          break;
-        case(2015):
-          juego = "The Witcher 3: Wild Hunt";
-          break;
-        case(2016):
-          juego = "Uncharted 4: A Thief's end";
-          break;
-        case(2017):
-          juego = "The Legend of Zelda: Breath of the Wild";
-          break;
-        case(2018):
-          juego = "Red Dead Redemption 2";
-          break;
-        default:
-          juego = "Escondidas americanas... pero por ser tan feit@, no te dejaban jugar xD";
-          break;
-      }
+      year = parseInt(year, 10);
 
-      document.write(`El videojuego más relevante de ${year} es <strong>${juego}</strong>.`);
+      const games = {
+        1980: "Pacman",
+        1981: "Donkey Kong",
+        1982: "Pitfall",
+        1983: "Mario Bros",
+        1984: "Elite",
+        1985: "Super Mario Bros",
+        1986: "The Legend of Zelda",
+        1987: "Mike Tyson's Punch-Out!! ",
+        1988: "Super Mario Bros 3",
+        1989: "Tetris",
+        1990: "Super Mario World",
+        1991: "Street Fighter II",
+        1992: "Mortal Kombat",
+        1993: "Doom",
+        1994: "Donkey Kong Country",
+        1995: "Super Mario World II: Yoshi Island (no sabia que existia D=)",
+        1996: "Super Mario 64",
+        1997: "Final Fantasy VII",
+        1998: "The Legend of Zelda: Ocarina of Time",
+        1999: "Unreal Tournament",
+        2000: "The Sims",
+        2001: "Halo",
+        2002: "Metroid Prime",
+        2003: "Star Wars: Knights of the old republic",
+        2004: "Half-life 2",
+        2005: "Resident Evil 2",
+        2006: "The Legend of Zelda: Twilight Princess",
+        2007: "Super Mario galaxy",
+        2008: "Fallout 3",
+        2009: "Uncharted 2: Among Thieves",
+        2010: "Mass Effect 2",
+        2011: "The Elder Scroll V: Skyrim",
+        2012: "Journey",
+        2013: "The Last of Us",
+        2014: "Dragon Age: Inquisition",
+        2015: "The Witcher 3: Wild Hunt",
+        2016: "Uncharted 4: A Thief's end",
+        2017: "The Legend of Zelda: Breath of the Wild",
+        2018: "Red Dead Redemption 2",
+      };
+
+      document.write(`El videojuego más relevante de ${year} es <strong>${games[year] || defaultMessage}</strong>.`);
     </script>
     <br>
     <p>Lista tomada de <a href="https://bit.ly/2XSMWn4"> Vandal.</a></p>
